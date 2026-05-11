@@ -4,42 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-</head>
+    <style>
+        body {
+            margin: 0px;
+        }
 
-<body style="margin:0px; /*background-image: ??? ;*/">
-    <header style="
-        background-color: purple;
-        color: white;
-        text-align:center;
-        padding: 10px;
-        margin:0px;
-    ">
-        <h1>Lorem Ipsum</h1>
-    </header>
+        header {
+            /* background-color: rgba(255,0,0,0.5); */
+            background-color: hsla(360,100%,50%, 0.5);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 0px;
+        }
 
-    <div style="
+        .text-panel {
             border: 1px solid purple;
             border-radius: 5px;
             margin: 10px;
             padding: 10px;
             color: purple;
-            font-family:'Courier New', Courier, monospace
-        ">
-        <h2 style="text-align: center;">Lorem Ipsum 2</h2>
+            font-family: 'Courier New', Courier, monospace
+        }
+
+        h2{
+            text-align: center
+        }
+
+        .link-button{
+            display:inline-block;
+            border: 1px solid purple;
+            border-radius: 5px;
+            background-color: purple;
+            color:aliceblue;
+            text-decoration:none;
+            padding:5px;
+            margin:5px;
+            transition-duration: 0.3s;
+        }
+
+        .link-button:hover{
+            background-color: aliceblue;
+            color:purple;
+            transition-duration: 0.3s;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Lorem Ipsum</h1>
+    </header>
+    
+    <a class="link-button" href="podstrona.html" >Link do podstrony</a>
+    <br>
+    <button class="link-button" onclick="location.href='podstrona.html'">
+        Button do podstrony
+    </button>
+    <br>
+    <a class="link-button" href="https://pja.edu.pl" target="blank" title="strona otwiera się w nowej karcie">Link do strony szkolnej</a>
+
+    <div class="text-panel">
+        <h2>Lorem Ipsum 2</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime cumque, unde voluptatem explicabo esse,
             ullam
             voluptas ea fuga nostrum a assumenda id eos quis vel nobis fugiat nihil hic quia?</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime cumque, unde voluptatem explicabo esse,
             ullam voluptas ea fuga nostrum a assumenda id eos quis vel nobis fugiat nihil hic quia?</p>
     </div>
-    <div style="
-            border: 1px solid purple;
-            margin: 10px;
-            padding: 10px;
-            color: purple;
-            font-family:'Courier New', Courier, monospace
-        ">
-        <h2 style="text-align: center;">Lorem Ipsum 3</h2>
+    <div class="text-panel">
+        <h2>Lorem Ipsum 3</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime cumque, unde voluptatem explicabo esse,
             ullam voluptas ea fuga nostrum a assumenda id eos quis vel nobis fugiat nihil hic quia?</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime cumque, unde voluptatem explicabo esse,
